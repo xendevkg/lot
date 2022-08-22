@@ -1,0 +1,12 @@
+body { top: 25px !important;}
+#google_translate_element { }
+.goog-te-gadget { display: none;}
+.goog-te-gadget-simple { display: none;}
+.goog-te-menu2 { display: none;}
+.goog-te-menu-value { display: none;}
+.goog-te-menu-value:before { display: none;}
+.goog-te-menu-value span:nth-child(5) { display: none;}
+.goog-te-menu-value span:nth-child(3) { display: none;}
+.goog-te-menu-value span:nth-child(3):after { display: none;}
+.goog-te-gadget-icon { display: none;}
+.goog-te-banner-frame.skiptranslate { visibility:hidden;}

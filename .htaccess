@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+ErrorDocument 404 /index.php
+ErrorDocument 403 /index.php
+ErrorDocument 401 /index.php
+RewriteRule ^day/([a-z]+)/([0-9]+)/?$ index.php?day=byday&d=$1&page=$2 [L,QSA]
+RewriteRule ^winner/([0-9\-]+)/(.+?)/?$ index.php?day=1st&date=$1&key=$2 [L,QSA]
+RewriteRule ^search\.cgi index.php?day=search [L,QSA]
+RewriteRule ^about\.cgi index.php?day=about [L,QSA]
+RewriteRule ^contact\.cgi index.php?day=contact [L,QSA]
+RewriteRule ^responsible\.cgi index.php?day=partner [L,QSA]
+RewriteRule ^live\.cgi index.php?day=live [L,QSA]
+Options All -Indexes
+</IfModule>
+
+#TIMEZONE VICTORIA AUSTRALIA
+php_value date.timezone 'Australia/Sydney'
