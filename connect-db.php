@@ -1,10 +1,10 @@
 <?php 
 error_reporting(0);
 //----- KONEKSI -----//
-$server = 'localhost';
-$user = 'u802412798_victoriapool';
-$pass = 'X3p[3HeO';
-$db = 'u802412798_victoriapool';
+$server = '';
+$user = '';
+$pass = '';
+$db = '';
 //----- VALIDASI ----//
 $connection = mysql_connect($server, $user, $pass) 
 or die ("Could not connect to server ... \n" . mysql_error ());
